@@ -1,7 +1,9 @@
+import Navbar from "./components/Landing/Navbar";
+
 export default function Home() {
   return (
     <main>
-      <div>hi</div>
+      <Navbar />
     </main>
   );
 }

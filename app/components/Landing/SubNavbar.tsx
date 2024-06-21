@@ -2,7 +2,9 @@ import React from 'react'
 
 const SubNavbar = () => {
   return (
-    <div>SubNavbar</div>
+    <div className='flex w-full items-center bg-[#55A4B2] px-5'>
+      subnavbar
+    </div>
   )
 }
 
