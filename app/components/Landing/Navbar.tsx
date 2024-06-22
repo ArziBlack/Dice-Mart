@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="col-span-3 flex items-center justify-between w-full">
           {/* The Search Bar */}
           <div className="flex items-center justify-between w-full">
-            <div className="items-center grid grid-cols-3 gap-2">
+            <div className="items-center grid grid-cols-4 gap-2 w-full">
               {/* The Input Bar */}
               <div className="flex items-center p-2 border border-[#65A4E2] rounded max-w-[540px] w-full col-span-2">
                 <FaSearch />
@@ -23,10 +23,10 @@ const Navbar = () => {
               <button className="bg-[#55A4B2] p-2 col-span-1 rounded text-white">Search</button>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-3 text-white w-1/3">
+          <div className="grid grid-cols-3 gap-3 text-white w-1/3 text-xs">
             <div className="flex items-center">
-              <p>Account</p>
-              <FaUser color="white" size={20} />
+              <p className="pr-1">Account</p>
+              <FaUser color="white" size={14} />
             </div>
             <div className="flex items-center">
               <FaQuestionCircle color="white" size={20} className="pr-1"/>
