@@ -20,24 +20,24 @@ const Navbar = () => {
                 <input placeholder="search here..." className="border-none bg-inherit outline-none ml-2 w-full flex" />
               </div>
               {/* The search button */}
-              <button className="bg-[#55A4B2] p-2 col-span-1 rounded">Search</button>
+              <button className="bg-[#55A4B2] p-2 col-span-1 rounded text-white">Search</button>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-3 text-white w-1/3">
             <div className="flex items-center">
               <p>Account</p>
-              <FaUser />
+              <FaUser color="white" size={20} />
             </div>
             <div className="flex items-center">
-              <FaQuestionCircle />
-              <select name="" id="">
+              <FaQuestionCircle color="white" size={20} className="pr-1"/>
+              <select name="" id="" className="bg-inherit border-none outline-none">
                 <option value="Help">Help</option>
                 <option value="FAQ">FAQ</option>
               </select>
             </div>
             <div className="flex items-center">
-              <span>Cart</span>
-              <FaCartShopping />
+              <span className="pr-1">Cart</span>
+              <FaCartShopping color="white" />
             </div>
           </div>
         </div>
