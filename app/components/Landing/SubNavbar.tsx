@@ -3,7 +3,7 @@ import React from 'react'
 
 const SubNavbar = () => {
   return (
-    <div className='flex w-full items-center bg-[#55A4B2] px-5 pr-2 justify-evenly py-3 text-white'>
+    <div className='flex w-full items-center bg-[#55A4B2] px-5 pr-2 justify-evenly py-3 text-white font-[100]'>
       <Link href={`/`}>Home</Link>
       <Link href={`/favourite`}>Favourite</Link>
       <Link href={`/vehicles`}>Vehicles</Link>

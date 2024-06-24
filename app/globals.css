@@ -20,6 +20,10 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+.custom-height {
+  height: calc(100vh - 170px);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

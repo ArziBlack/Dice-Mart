@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import SubNavbar from "./SubNavbar";
 import { FaQuestionCircle, FaSearch } from "react-icons/fa";
