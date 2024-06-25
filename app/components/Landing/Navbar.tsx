@@ -29,7 +29,7 @@ const Navbar = () => {
               <p className="pr-1">Account</p>
               <FaUser color="white" size={14} />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center bg-[#55A4B2] p-1 py-2 rounded-md">
               <FaQuestionCircle color="white" size={20} className="pr-1"/>
               <select name="" id="" className="bg-inherit border-none outline-none">
                 <option value="Help">Help</option>
