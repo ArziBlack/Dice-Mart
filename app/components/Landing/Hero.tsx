@@ -1,9 +1,10 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import "swiper/css";
+import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from "next/image";
@@ -111,10 +112,11 @@ const Hero = () => {
     <div className="w-full p-5 flex gap-5">
       <div className=" w-2/3 bg-orange-600">
         <Swiper
-        modules={[Navigation, Pagination, A11y]}
+        modules={[Navigation, Pagination, A11y, Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
           navigation
+          autoplay={{delay: 3000}}
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
