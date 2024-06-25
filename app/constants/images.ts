@@ -1,3 +1,25 @@
+import tv from "../assets/images/tv.png";
+import nokia from "../assets/images/Nokia.png";
+import galaxy from "../assets/images/galaxy.png";
+import monitor from "../assets/images/screen.png";
+import fashion from "../assets/images/fashion.png";
+import generator from "../assets/images/generator.png";
+import shoppingGirl from "../assets/images/shoping.png";
+import television from "../assets/images/television.png";
+import smallPhone from "../assets/images/phone-small.png";
+import assessories from "../assets/images/assessories.png";
+import tableCooker from "../assets/images/table-cooker.png";
 import imageSlideOne from "../assets/images/image-slide-1.png";
 
+export const TV = tv;
+export const NOKIA = nokia;
+export const GALAXY = galaxy;
+export const FASHION = fashion;
+export const MONITOR = monitor;
+export const GENERATOR = generator;
+export const TELEVISION = television;
+export const SMALLPHONE = smallPhone;
+export const ASSESSORIES = assessories;
+export const TABLECOOKER = tableCooker;
+export const SHOPPINGGIRL = shoppingGirl;
 export const IMAGESLIDEONE = imageSlideOne;
