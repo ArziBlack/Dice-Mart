@@ -4,6 +4,9 @@ import SponsoredProducts from "./components/Landing/SponsoredProducts";
 import TodayDeals from "./components/Landing/TodayDeals";
 import SameDay from "./components/Landing/SameDay";
 import Categories from "./components/Landing/Categories";
+import OfficialDealers from "./components/Landing/OfficialDealers";
+import OfficialStores from "./components/Landing/OfficialStores";
+import AboutUs from "./components/Landing/AboutUs";
 
 export default function Home() {
   return (
@@ -11,9 +14,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TodayDeals/>
-      <SponsoredProducts/>
-      <SameDay/>
       <Categories/>
+      <SponsoredProducts/>
+      <OfficialDealers/>
+      <SameDay/>
+      <OfficialStores/>
+      <AboutUs/>
     </main>
   );
 }
