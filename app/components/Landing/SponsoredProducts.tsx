@@ -65,7 +65,7 @@ const SlideTwo = () => {
 const SponsoredProducts = () => {
   return (
     <div className="flex flex-col my-7 mx-7 mt-14 pb-5">
-      <h2>Sponsored Products</h2>
+      <h2 className="">Sponsored Products</h2>
       <div className="w-full flex">
         {/* <div></div> */}
         <Swiper
