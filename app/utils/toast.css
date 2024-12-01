@@ -1,0 +1,14 @@
+.toast-container {
+  transform: translateX(100%); /* Start position (off-screen) */
+  opacity: 0;
+}
+
+.toast-container.slide-in {
+  transform: translateX(0); /* Slide in to the visible position */
+  opacity: 1;
+}
+
+.toast-container.slide-out {
+  transform: translateX(100%); /* Slide out to the right */
+  opacity: 0;
+}

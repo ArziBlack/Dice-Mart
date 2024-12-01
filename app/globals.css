@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -39,6 +39,16 @@
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+}
+
+.slide-in {
+  transform: translateX(0); /* Slide in to the visible position */
+  opacity: 1;
+}
+
+.slide-out {
+  transform: translateX(100%); /* Slide out to the right */
+  opacity: 0;
 }
 
 @media (prefers-color-scheme: dark) {
