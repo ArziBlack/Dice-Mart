@@ -11,9 +11,11 @@ import Beauty from "./components/Landing/Beauty";
 import Computer from "./components/Landing/Computer";
 import AboutUs from "./components/Landing/AboutUs";
 import NewsLetter from "./components/Landing/NewsLetter";
-import Footer from "./components/Landing/Footer";
+import Footer_1 from "./components/Landing/footer";
 import Toast from "./utils/toast";
 import { ToastEnum } from "./utils/toast-type";
+import Hero_1 from "./components/Landing/Hero_1";
+import Navbar_1 from "./components/Landing/navbar_1";
 
 export default function Home() {
   return (
@@ -24,8 +26,10 @@ export default function Home() {
         close={false}
         delay={3000}
       />
-      <Navbar />
-      <Hero />
+      {/* <Navbar /> */}
+      <Navbar_1 />
+      {/* <Hero /> */}
+      <Hero_1 />
       <TodayDeals />
       <Categories />
       <SponsoredProducts />
@@ -35,9 +39,9 @@ export default function Home() {
       <Computer />
       <Beauty />
       <SameDay />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <NewsLetter />
-      <Footer />
+      <Footer_1 />
     </main>
   );
 }
