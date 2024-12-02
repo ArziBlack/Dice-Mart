@@ -4,5 +4,6 @@ export const navLinks = [
   { name: "Funitures", path: "/instructor" },
   { name: "Electronics", path: "/pricing" },
   { name: "Vehicles", path: "/contact" },
+  { name: "Gift Cards", path: "/contact" },
   { name: "About", path: "/about-us" },
 ];

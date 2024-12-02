@@ -16,6 +16,7 @@ import Toast from "./utils/toast";
 import { ToastEnum } from "./utils/toast-type";
 import Hero_1 from "./components/Landing/Hero_1";
 import Navbar_1 from "./components/Landing/navbar_1";
+import Navbar_2 from "./components/Landing/navbar_2";
 
 export default function Home() {
   return (
@@ -27,7 +28,8 @@ export default function Home() {
         delay={3000}
       />
       {/* <Navbar /> */}
-      <Navbar_1 />
+      {/* <Navbar_1 /> */}
+      <Navbar_2 />
       {/* <Hero /> */}
       <Hero_1 />
       <TodayDeals />
