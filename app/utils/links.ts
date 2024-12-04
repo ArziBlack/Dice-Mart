@@ -1,8 +1,8 @@
 export const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Favorites", path: "/courses" },
-  { name: "Categories", path: "/instructor" },
-  { name: "Gift Cards", path: "/contact" },
+  { name: "Favorites", path: "/favourite" },
+  { name: "Categories", path: "" },
+  { name: "Gift Cards", path: "/gift_cards" },
   { name: "Contact us", path: "/contact" },
   { name: "About", path: "/about-us" },
 ];

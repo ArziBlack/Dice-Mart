@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero_1 = () => {
   return (
-    <section className="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+    <section className="bg-white py-8 antialiased dark:bg-black-900 md:py-16">
       <div className="mx-auto grid max-w-screen-xl px-4 pb-8 md:grid-cols-12 lg:gap-12 lg:pb-16 xl:gap-0 pt-20">
         <div className="content-center justify-self-start md:col-span-7 md:text-start">
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight dark:text-white md:max-w-2xl md:text-5xl xl:text-6xl">

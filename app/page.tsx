@@ -20,7 +20,7 @@ import Navbar_2 from "./components/Landing/navbar_2";
 
 export default function Home() {
   return (
-    <main className="bg-[#292727] raleway">
+    <main className="bg-main-50 text-black-950 raleway">
       <Toast
         icon={ToastEnum.STREAK}
         message="hello"
