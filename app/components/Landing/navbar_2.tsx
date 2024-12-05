@@ -10,10 +10,10 @@ const Navbar_2 = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full">
-      <nav className="fixed top-0 right-0 left-0 w-screen z-50">
+    <header className="px-10 w-screen flex items-center justify-center">
+      <nav className="fixed top-0  w-screen max-w-screen-2xl z-50 px-5 ">
         <div
-          className={`bg-main-200 backdrop-blur-md border border-border rounded-lg p-4 shadow-lg lg:px-6 py-2.5 mt-2 dark:bg-main-600/50 flex justify-between items-center md:mx-auto max-w-screen-xl`}
+          className={`bg-main-200 backdrop-blur-md border border-border rounded-lg p-4 shadow-lg lg:px-6 py-2.5 mt-2 dark:bg-main-600/50 flex justify-between items-center md:mx-auto w-full`}
         >
           {/* Logo and Hamburger Menu */}
           <div className="flex items-center justify-between w-full lg:w-auto">

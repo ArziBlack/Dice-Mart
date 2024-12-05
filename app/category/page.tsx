@@ -16,7 +16,7 @@ const Category = () => {
     { name: "Funitures", image: TABLECOOKER },
   ];
   return (
-    <div className="px-7 flex flex-col mt-5">
+    <div className="px-7 flex flex-col mt-24">
       <div className="flex items-start justify-between py-3 px-5 w-full bg-[#00468B] text-white mb-3">
         <h2>Explore All Categories</h2>
       </div>

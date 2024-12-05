@@ -1,5 +1,3 @@
-import Hero from "./components/Landing/Hero";
-import Navbar from "./components/Landing/Navbar";
 import SponsoredProducts from "./components/Landing/SponsoredProducts";
 import TodayDeals from "./components/Landing/TodayDeals";
 import SameDay from "./components/Landing/SameDay";
@@ -9,28 +7,20 @@ import OfficialStores from "./components/Landing/OfficialStores";
 import Appliance from "./components/Landing/Appliance";
 import Beauty from "./components/Landing/Beauty";
 import Computer from "./components/Landing/Computer";
-import AboutUs from "./components/Landing/AboutUs";
 import NewsLetter from "./components/Landing/NewsLetter";
-import Footer_1 from "./components/Landing/footer";
 import Toast from "./utils/toast";
 import { ToastEnum } from "./utils/toast-type";
 import Hero_1 from "./components/Landing/Hero_1";
-import Navbar_1 from "./components/Landing/navbar_1";
-import Navbar_2 from "./components/Landing/navbar_2";
 
 export default function Home() {
   return (
-    <main className="bg-main-50 text-black-950 raleway">
+    <main className="text-black-950 raleway w-screen max-w-screen-2xl flex flex-col justify-center">
       <Toast
         icon={ToastEnum.STREAK}
         message="hello"
         close={false}
         delay={3000}
       />
-      {/* <Navbar /> */}
-      {/* <Navbar_1 /> */}
-      <Navbar_2 />
-      {/* <Hero /> */}
       <Hero_1 />
       <TodayDeals />
       <Categories />
@@ -41,9 +31,7 @@ export default function Home() {
       <Computer />
       <Beauty />
       <SameDay />
-      {/* <AboutUs /> */}
       <NewsLetter />
-      <Footer_1 />
     </main>
   );
 }
