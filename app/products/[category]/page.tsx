@@ -12,7 +12,7 @@ const Category = ({ params }: { params: { category: string } }) => {
   }
   return (
     <div className="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-12">
-      <div className="mx-auto max-w-screen-2xl pt-10 px-4 2xl:px-0">
+      <div className="max-w-screen-2xl pt-10 px-4 2xl:px-0">
         {/* <!-- Heading & Filters --> */}
         <div className="mb-4 items-end justify-between space-y-4 sm:flex sm:space-y-0 md:mb-8">
           <div>
@@ -246,7 +246,10 @@ const Category = ({ params }: { params: { category: string } }) => {
         </div>
         <div className="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
           {products.map((product, idx) => (
-            <Link key={idx} href="#">
+            <Link
+              key={idx}
+              href={`/products/${category}/${product.id.toString()}`}
+            >
               {" "}
               <Card
                 product_name={product.productName}
@@ -272,7 +275,7 @@ const Category = ({ params }: { params: { category: string } }) => {
       <form
         id="filterModal"
         className={`fixed ${
-          filter && "hidden"
+          !filter && "hidden"
         } backdrop-blur-md bg-black-500/25 left-0 right-0 top-0 z-50 h-modal w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0 md:h-full flex justify-center`}
       >
         <div className="relative h-full w-[900px] md:h-auto  border border-border rounded-lg shadow-lg">

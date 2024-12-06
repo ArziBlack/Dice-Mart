@@ -2,8 +2,8 @@ import React from "react";
 
 const Checkout = () => {
   return (
-    <section className="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
-      <form action="#" className="mx-auto max-w-screen-xl px-4 2xl:px-0">
+    <section className="bg-white py-8 w-full antialiased dark:bg-black-950 md:py-16">
+      <form action="#" className="mx-auto max-w-screen-2xl pt-20 px-4 2xl:px-0">
         <ol className="items-center flex w-full max-w-2xl text-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:text-base">
           <li className="after:border-1 flex items-center text-primary-700 after:mx-6 after:hidden after:h-1 after:w-full after:border-b after:border-gray-200 dark:text-primary-500 dark:after:border-gray-700 sm:after:inline-block sm:after:content-[''] md:w-full xl:after:mx-10">
             <span className="flex items-center after:mx-2 after:text-gray-200 after:content-['/'] dark:after:text-gray-500 sm:after:hidden">
@@ -189,7 +189,7 @@ const Checkout = () => {
                         />
                         <mask
                           id="a"
-                          style="mask-type:luminance"
+                          style={{ maskType: "luminance" }}
                           width="20"
                           height="15"
                           x="0"
@@ -314,7 +314,7 @@ const Checkout = () => {
                                 />
                                 <mask
                                   id="a"
-                                  style="mask-type:luminance"
+                                  style={{ maskType: "luminance" }}
                                   width="20"
                                   height="15"
                                   x="0"
@@ -415,7 +415,7 @@ const Checkout = () => {
                                 />
                                 <mask
                                   id="a"
-                                  style="mask-type:luminance"
+                                  style={{ maskType: "luminance" }}
                                   width="20"
                                   height="15"
                                   x="0"
@@ -478,7 +478,7 @@ const Checkout = () => {
                                 />
                                 <mask
                                   id="a"
-                                  style="mask-type:luminance"
+                                  style={{ maskType: "luminance" }}
                                   width="20"
                                   height="15"
                                   x="0"
@@ -570,7 +570,7 @@ const Checkout = () => {
                                 />
                                 <mask
                                   id="a"
-                                  style="mask-type:luminance"
+                                  style={{ maskType: "luminance" }}
                                   width="20"
                                   height="15"
                                   x="0"
@@ -700,7 +700,7 @@ const Checkout = () => {
                                 />
                                 <mask
                                   id="a"
-                                  style="mask-type:luminance"
+                                  style={{ maskType: "luminance" }}
                                   width="20"
                                   height="15"
                                   x="0"

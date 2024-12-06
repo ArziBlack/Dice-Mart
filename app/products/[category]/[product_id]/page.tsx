@@ -1,14 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
-const DetailedPage = async ({
-  params,
-}: {
-  params: Promise<{ product_id: string }>;
-}) => {
-  const product_id = (await params).product_id;
+const DetailedPage = ({ params }: { params: { product_id: string } }) => {
+  const product_id = params.product_id;
+  const [checkout, setCheckout] = useState(false);
+  function toggleCheckout() {
+    setCheckout(!checkout);
+  }
   return (
-    <section className="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
-      <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
+    <section className="py-8 bg-white md:py-16 dark:bg-black-950 antialiased">
+      <div className="max-w-screen-2xl px-4 mx-auto 2xl:px-0 pt-20">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
             <img
@@ -135,6 +136,7 @@ const DetailedPage = async ({
                 title=""
                 className="text-white mt-4 sm:mt-0 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 flex items-center justify-center"
                 role="button"
+                onClick={() => setCheckout(true)}
               >
                 <svg
                   className="w-5 h-5 -ms-2 me-2"
@@ -153,7 +155,33 @@ const DetailedPage = async ({
                     d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"
                   />
                 </svg>
-                Add to cart
+                {checkout ? "Checkout" : "Add to cart"}
+              </a>
+
+              <a
+                href="/cart"
+                title=""
+                className="text-white mt-4 sm:mt-0 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 flex items-center justify-center"
+                role="button"
+              >
+                <svg
+                  className="w-5 h-5 -ms-2 me-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6"
+                  />
+                </svg>
+                View Cart
               </a>
             </div>
 
