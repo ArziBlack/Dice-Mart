@@ -8,14 +8,26 @@ import {
 } from "@/app/assets/icons";
 import React from "react";
 
-const Card = ({
+interface ICardProps {
+  image: string;
+  discount: number;
+  addToFavourite?: () => void;
+  view?: () => void;
+  product_name: string;
+  rating: number;
+  price: number;
+  no_of_reviews: number;
+}
+
+const Card: React.FC<ICardProps> = ({
   image,
   discount,
   addToFavourite,
   view,
-  productName,
+  product_name,
   rating,
   price,
+  no_of_reviews,
 }) => {
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
@@ -87,7 +99,7 @@ const Card = ({
           href="#"
           className="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
         >
-          {productName}
+          {product_name}
         </a>
 
         <div className="mt-2 flex items-center gap-2">
@@ -103,7 +115,7 @@ const Card = ({
             {rating}
           </p>
           <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
-            (455)
+            ({no_of_reviews})
           </p>
         </div>
 
