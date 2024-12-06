@@ -1,6 +1,7 @@
 import React from "react";
 import { ASSESSORIES, FASHION, TABLECOOKER } from "@/app/constants/images";
 import Image from "next/image";
+import Link from "next/link";
 
 const Category = () => {
   const categories = [
@@ -16,15 +17,16 @@ const Category = () => {
     { name: "Funitures", image: TABLECOOKER },
   ];
   return (
-    <div className="px-7 flex flex-col mt-24">
+    <div className=" max-w-screen-2xl px-7 flex flex-col mt-24">
       <div className="flex items-start justify-between py-3 px-5 w-full bg-[#00468B] text-white mb-3">
         <h2>Explore All Categories</h2>
       </div>
-      <div className="grid grid-cols-5 gap-5 mt-5">
+      <div className="grid grid-cols-6 gap-5 mt-5">
         {categories.map((category, index) => (
-          <div
+          <Link
+            href={`/products/${category.name}`}
             key={index}
-            className="flex flex-col items-center justify-center"
+            className="flex flex-col items-center justify-center cursor-pointer"
           >
             <div className="w-[220px] h-[220px] rounded-full">
               <Image
@@ -36,7 +38,7 @@ const Category = () => {
             <h2 className="text-2xl font-light mt-3 text-black-900">
               {category.name}
             </h2>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
